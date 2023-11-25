@@ -1,19 +1,8 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-
-
-
-@font-face {
-    font-family: 'idroid';
-    src: url(../fontes/idroid.otf) format(opentype);
-    font-weight: normal;
-    font-style: normal;
-}
 
 :root {
     --cor0: #C5EBD6;
@@ -59,7 +48,7 @@ header > p {
 }
 
 div.bloco {
-    height: 600px;
+    height: 700px;
     min-width: 600px;
     border: 1px solid darkblue;
     font-family: var(--fonte-padrao);
@@ -67,14 +56,26 @@ div.bloco {
 }
 div.bloco > p {
     width: 600px;
+
 }
 
 div#q1 {
+    position: relative;
     background-color: white;
 }
+
+div#q1 > article {
+    position: absolute;
+    background-size: 100px;
+    left: 30px;
+    top: 30px; 
+    /*
+    border: 1px solid black;
+    */
+}
 div#q2 {
+    background-size: cover;
     color: white;
-    height: 700px;
     position: relative;
     background: darkgreen url(../imagens/background001.jpg) center center no-repeat fixed;
     background-size: cover;
@@ -82,13 +83,7 @@ div#q2 {
 div#q2 > article {
     position: absolute;
     background-size: 100% 100%;
-    position: absolute;
-    /*
-    height: 200px;
-    width: 400px;
-    */
     background-color: rgba(0, 100, 0, 0.153);
-
     left: 30px;
     top: 30px; 
     /*
