@@ -32,6 +32,7 @@
     margin: 0px;
     padding: 0px;
 }
+
 body a {
     text-decoration: none;
     font-weight: bold;
@@ -62,8 +63,7 @@ div.bloco {
     min-width: 600px;
     border: 1px solid darkblue;
     font-family: var(--fonte-padrao);
-    font-size: 3em;
-
+    font-size: 3em; 
 }
 div.bloco > p {
     width: 600px;
