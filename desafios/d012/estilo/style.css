@@ -32,6 +32,14 @@
     margin: 0px;
     padding: 0px;
 }
+body a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body a:hover {
+    text-decoration: under;
+}
 
 header {
     background-color: black;
@@ -50,7 +58,7 @@ header > p {
 }
 
 div.bloco {
-    height: 800px;
+    height: 600px;
     min-width: 600px;
     border: 1px solid darkblue;
     font-family: var(--fonte-padrao);
@@ -65,11 +73,13 @@ div#q1 {
     background-color: white;
 }
 div#q2 {
+    color: white;
+    height: 700px;
     position: relative;
     background: darkgreen url(../imagens/background001.jpg) center center no-repeat fixed;
     background-size: cover;
 }
-div#q2 > p {
+div#q2 > article {
     position: absolute;
     background-size: 100% 100%;
     position: absolute;
@@ -77,16 +87,48 @@ div#q2 > p {
     height: 200px;
     width: 400px;
     */
-    background-color: darkgreen;
+    background-color: rgba(0, 100, 0, 0.153);
 
-    left: 5%;
-    top: 5%; 
+    left: 30px;
+    top: 30px; 
     /*
     transform: translate(-50%, -50%);
     */
 }
-
+div#q3 {
+    height: 1400px;
+}
 div#q4 {
+    color: white;
+    height: 700px;
+    position: relative;
     background: darkgreen url(../imagens/background002.jpg) center center no-repeat fixed;
     background-size: cover;
+}
+div#q4 > article {
+    position: absolute;
+    background-size: 100% 100%;
+    position: absolute;
+    background-color: rgba(105, 105, 105, 0.350);
+
+    left: 30px;
+    top: 30px; 
+
+}
+
+div#q5 {
+    height: 1400px;
+}
+
+footer {
+    font-family: var(--fonte-destaque);
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
