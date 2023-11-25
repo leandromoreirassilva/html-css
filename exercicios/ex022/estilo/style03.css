@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(../imagens/wallpaper001.jpg);
+    background-size: 100px 100px;
+    background-repeat: repeat-x;
+}
+
+div.bloco {
+    background-image: url(../imagens/wallpaper003.jpg);
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+div#quadro01 {
+    background-position: left top;
+}
+div#quadro02 {
+    background-position: left center;
+}
+div#quadro03 {
+    background-position: right bottom;
+}
+div#quadro04 {
+    background-position: center center;
+}
