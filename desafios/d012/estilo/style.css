@@ -8,6 +8,7 @@
     --cor0: #C5EBD6;
     --cor1: #83e1ad;
 
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte-padrao:'Sriracha', cursive;
     --fonte-destaque:'Passion One', sans-serif;
 }
@@ -21,19 +22,21 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
-    font-family: var(--fonte-destaque);
 }
 
 header > h1 {
-    padding: 50px;
+    padding-top: 50px;
     font-variant: small-caps;
-    font-size: 5em;
+    font-family: var(--fonte-destaque);
+    font-size: 10vw;
+
 }
 
 header > p {
@@ -56,43 +59,28 @@ div {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte-padrao);
+    font-size: 3.5vw;
 }
 
 div.normal {
     background-color: white;
     color: black;
-    /*
-    height: 700px;
-    min-width: 600px;
-    border: 1px solid darkblue;
-    font-family: var(--fonte-padrao);
-    font-size: 3em; 
-    */
 }
 
 div.imagem {
     background-color: black;
     color: white;
-
-    /*
-    height: 700px;
-    min-width: 600px;
-    border: 1px solid darkblue;
-    font-family: var(--fonte-padrao);
-    font-size: 3em; 
-    */
 }
 
 div.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.295);
 }
 
-
-
 div#q1 {
     position: relative;
-    background-color: white;
 }
 
 div#q1 > article {
@@ -100,13 +88,9 @@ div#q1 > article {
     background-size: 100px;
     left: 30px;
     top: 30px; 
-    /*
-    border: 1px solid black;
-    */
 }
 div#q2 {
     background-size: cover;
-    color: white;
     position: relative;
     background: darkgreen url(../imagens/background001.jpg) center center no-repeat fixed;
     background-size: cover;
@@ -117,15 +101,9 @@ div#q2 > article {
     background-color: rgba(0, 100, 0, 0.153);
     left: 30px;
     top: 30px; 
-    /*
-    transform: translate(-50%, -50%);
-    */
 }
-div#q3 {
-    height: 1400px;
-}
+
 div#q4 {
-    color: white;
     height: 700px;
     position: relative;
     background: darkgreen url(../imagens/background002.jpg) center center no-repeat fixed;
@@ -140,10 +118,6 @@ div#q4 > article {
     left: 30px;
     top: 30px; 
 
-}
-
-div#q5 {
-    height: 1400px;
 }
 
 footer {
