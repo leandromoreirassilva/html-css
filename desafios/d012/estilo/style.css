@@ -63,6 +63,10 @@ div {
     font-size: 3.5vw;
 }
 
+div > p {
+    padding-bottom: 2em;
+}
+
 div.normal {
     background-color: white;
     color: black;
@@ -71,53 +75,27 @@ div.normal {
 div.imagem {
     background-color: black;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 div.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.295);
+    background-color: rgba(0, 0, 0, 0.495);
+    text-shadow: 1px 1px 0px black;
 }
 
-div#q1 {
-    position: relative;
-}
-
-div#q1 > article {
-    position: absolute;
-    background-size: 100px;
-    left: 30px;
-    top: 30px; 
-}
 div#q2 {
-    background-size: cover;
     position: relative;
-    background: darkgreen url(../imagens/background001.jpg) center center no-repeat fixed;
-    background-size: cover;
-}
-div#q2 > article {
-    position: absolute;
-    background-size: 100% 100%;
-    background-color: rgba(0, 100, 0, 0.153);
-    left: 30px;
-    top: 30px; 
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
 }
 
 div#q4 {
-    height: 700px;
     position: relative;
-    background: darkgreen url(../imagens/background002.jpg) center center no-repeat fixed;
-    background-size: cover;
-}
-div#q4 > article {
-    position: absolute;
-    background-size: 100% 100%;
-    position: absolute;
-    background-color: rgba(105, 105, 105, 0.350);
-
-    left: 30px;
-    top: 30px; 
-
+    background-image: url(../imagens/background002.jpg);
 }
 
 footer {
