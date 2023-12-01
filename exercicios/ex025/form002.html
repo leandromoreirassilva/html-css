@@ -9,27 +9,56 @@
 <body>
     <h1>Meu segundo formulário</h1>
     <form autocomplete="on" method="post" action="cadastro.php">
-        <p>
-            <label for="iusu">Nome:</label>
-            <input type="text" name="iusu" id="iusu" 
-            required 
-            minlength="5"
-            maxlength="15"
-            size ="10"
-            placeholder="nome do usuário"
-            autocomplete="username">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="iusu">Nome:</label>
+                <input type="text" name="iusu" id="iusu"
+                required
+                minlength="5"
+                maxlength="15"
+                size ="10"
+                placeholder="nome do usuário"
+                autocomplete="username">
             
-        </p>
-        <p>
-            <label for="isen">Sobrenome: </label>
-            <input type="password" name="sen" id="isen" 
-            required 
-            minlength="8"
-            maxlength="20"
-            size ="8"
-            placeholder="minimo 8 letras"
-            autocomplete="current-password">
-        </p>
+            </p>
+            <p>
+                <label for="isen">Sobrenome: </label>
+                <input type="password" name="sen" id="isen"
+                required
+                minlength="8"
+                maxlength="20"
+                size ="8"
+                placeholder="minimo 8 letras"
+                autocomplete="current-password">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes</legend>
+            <p>
+                <input type="checkbox" name="basq" id="ibasq"
+                checked
+                >
+                <label for="ibasq">Basquete</label>
+            </p>
+            <p>
+                <input type="checkbox" name="vol" id="ivol">
+                <label for="ivol">Volei</label>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="sexmas" id="isexmas">
+                <label for="isexmas">Maxculino</label>
+            </p>
+            <p>
+                <input type="radio" name="sexmas" id="isexfem">
+                <label for="isexfem">Feminino</label>
+            </p>
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
