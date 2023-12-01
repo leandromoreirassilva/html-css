@@ -6,3 +6,16 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+html, body {
+    padding: 10px;
+}
+
+p {
+    padding: 10px;
+}
+
+/*
+
+    <form autocomplete="off" - desliga autocomplete 
+*/
