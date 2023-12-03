@@ -1,0 +1,59 @@
+@charset "UTF-8"; 
+
+/* Versão Mobile First */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.438);
+}
+
+header {
+    border: 1px solid blue;
+    background-color: gray;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+header > nav > a {
+    display: inline-block;
+    border: 1px solid blue;
+    background-color: rgb(51, 51, 51);
+    padding: 15px;
+}
+
+main {
+    background-color: white;
+    width: 50vw;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main > p {
+    text-align: justify;  
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+main > h2 {
+    margin-bottom: 20px;
+}
+
+
+
