@@ -30,7 +30,10 @@ h1 {
 }
 
 header > menu {
-    display: block;
+    display: none;
+    border: 1px solid blue;
+    text-align: center;
+
 }
 
 header > menu > ul {
@@ -39,13 +42,23 @@ header > menu > ul {
 
 header > menu> ul > li > a {
     display: inline-block;
-    border: 1px solid blue;
+    border: 1px solid white;
     background-color: rgb(51, 51, 51);
-    padding: 15px;
+    padding: 10px;
+    width: 100vw;
 }
 
 header > menu> ul > li > a:hover {
     background-color: gray;
+}
+
+span#burger {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;    
+    width: 100vw;
 }
 
 main {
